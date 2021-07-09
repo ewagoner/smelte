@@ -23,6 +23,7 @@ const postcssProcessor = ({
   return [
     require("postcss-import")(),
     require("postcss-url")(),
+    require("postcss-input-range")(),
     require("autoprefixer")(),
     require("tailwindcss")(tailwindConfig),
     ...postcss,
